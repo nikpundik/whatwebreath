@@ -1,13 +1,13 @@
-import Webcam from '../Webcam';
-import Copy from '../Copy';
-import Canvas from '../Canvas';
+import Webcam from "../Webcam";
+import Copy from "../Copy";
+import Canvas from "../Canvas";
 
-function City({ city, next, webcam = true }) {
+function City({ city, next, showWebcam, setShowWebcam }) {
   return (
     <div id="app">
-      {webcam && <Webcam />}
+      {showWebcam && <Webcam />}
       <Canvas city={city} />
-      <Copy city={city} next={next} />
+      <Copy city={city} next={next} setShowWebcam={setShowWebcam} />
     </div>
   );
 }

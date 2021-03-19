@@ -1,7 +1,7 @@
-import React from 'react'
-import { Canvas } from 'react-three-fiber'
+import React from "react";
+import { Canvas } from "react-three-fiber";
 
-import Particles from '../Particles';
+import Particles from "../Particles";
 
 import styles from "./Canvas.module.css";
 
@@ -29,7 +29,7 @@ function ThreeCanvas({ city }) {
         <Particles particles={particles} />
       </Canvas>
     </div>
-  )
+  );
 }
 
 export default ThreeCanvas;

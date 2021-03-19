@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import { getCity } from "../api";
 
-const useCity = location => {
+const cache = {};
+const getCached = (location) => cache[location.name || "home"];
+const setCached = (location, result) =>
+  (cache[location.name || "home"] = result);
+
+const useCity = (location) => {
   const [status, setStatus] = useState("loading");
   const [city, setCity] = useState(null);
 
@@ -9,7 +14,11 @@ const useCity = location => {
     const load = async () => {
       setStatus("loading");
       try {
-        const result = await getCity(location);
+        let result = getCached(location);
+        if (!result) {
+          result = await getCity(location);
+          setCached(location, result);
+        }
         setCity(result);
         setStatus("loaded");
       } catch (e) {
@@ -21,8 +30,8 @@ const useCity = location => {
   }, [location]);
 
   return {
-    status: status,
-    city: city
+    status,
+    city,
   };
 };
 

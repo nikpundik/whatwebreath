@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { getCity } from "../api";
 
 const cache = {};
-const getCached = (location) => cache[location.name || "home"];
+const getCached = location => cache[location.name || "home"];
 const setCached = (location, result) =>
   (cache[location.name || "home"] = result);
 
-const useCity = (location) => {
+const useCity = location => {
   const [status, setStatus] = useState("loading");
   const [city, setCity] = useState(null);
-
   useEffect(() => {
     const load = async () => {
       setStatus("loading");
@@ -31,7 +30,7 @@ const useCity = (location) => {
 
   return {
     status,
-    city,
+    city
   };
 };
 

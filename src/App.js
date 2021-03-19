@@ -10,11 +10,11 @@ function App() {
   const [isHome, setHome] = useState(true);
 
   const { status, city } = useCity(isHome ? homeLocation : locations[index]);
-
   const [showWebcam, setShowWebcam] = useState(true);
   const next = () => {
     if (isHome) {
-      setIndex((prev) => (prev === locations.length - 1 ? 0 : prev + 1));
+      setIndex(prev => (prev === locations.length - 1 ? 0 : prev + 1));
+
       setHome(false);
     } else {
       setHome(true);

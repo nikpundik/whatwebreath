@@ -1,18 +1,24 @@
 import React, { useState } from "react";
-
+import { locations } from "./utils/locations";
 import useCity from "./hooks/useCity";
 import City from "./components/City";
 
-const locations = [{ name: null }, { name: "Toronto" }, { name: "Mumbai" }];
+const homeLocation = { name: null };
 
 function App() {
   const [index, setIndex] = useState(0);
+  const [isHome, setHome] = useState(true);
 
-  const { status, city } = useCity(locations[index]);
+  const { status, city } = useCity(isHome ? homeLocation : locations[index]);
 
   const [showWebcam, setShowWebcam] = useState(true);
   const next = () => {
-    setIndex(prev => (prev === locations.length - 1 ? 0 : prev + 1));
+    if (isHome) {
+      setIndex(prev => (prev === locations.length - 1 ? 0 : prev + 1));
+      setHome(false);
+    } else {
+      setHome(true);
+    }
   };
   // const city = cities[index];
   return (

@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
+
 import { getCity } from "../api";
+import { getNextLocation } from "../utils/locations";
 
 const cache = {};
-const getCached = (location) => cache[location.name || "home"];
-const setCached = (location, result) =>
-  (cache[location.name || "home"] = result);
+const getCached = (slug) => cache[slug || "home"];
+const setCached = (slug, result) => (cache[slug || "home"] = result);
 
-const useCity = (location) => {
+const useCity = (slug) => {
   const [status, setStatus] = useState("loading");
   const [city, setCity] = useState(null);
+  const [nextCity, setNextCity] = useState(null);
 
   useEffect(() => {
     const load = async () => {
       setStatus("loading");
       try {
-        let result = getCached(location);
+        let result = getCached(slug);
         if (!result) {
-          result = await getCity(location);
-          setCached(location, result);
+          result = await getCity(slug);
+          setCached(slug, result);
         }
         setCity(result);
         setStatus("loaded");
@@ -27,11 +29,16 @@ const useCity = (location) => {
     };
 
     load();
-  }, [location]);
+    if (slug) {
+      setNextCity(getNextLocation(slug));
+    }
+  }, [slug]);
 
   return {
     status,
+    isHome: !slug,
     city,
+    nextCity,
   };
 };
 

@@ -1,31 +1,31 @@
-import { hereIpRequest, cityIpRequest } from './config';
+import { hereIpRequest, cityIpRequest } from "./config";
 
 const getParticles = (n) => {
-  let text = '';
+  let text = "";
   let limit = 0;
   switch (true) {
     case n < 50:
-      text = 'GOOD';
+      text = "GOOD";
       limit = 50;
       break;
     case n < 100:
-      text = 'MODERATE';
+      text = "MODERATE";
       limit = 100;
       break;
     case n < 150:
-      text = 'UNHEALTHY FOR SERSITIVE GROUPS';
+      text = "UNHEALTHY FOR SERSITIVE GROUPS";
       limit = 150;
       break;
     case n < 200:
-      text = 'UNHEALTHY';
+      text = "UNHEALTHY";
       limit = 200;
       break;
     case n < 300:
-      text = 'VERY UNHEALTHY';
+      text = "VERY UNHEALTHY";
       limit = 300;
       break;
     case n > 301:
-      text = 'HAZARDOUS';
+      text = "HAZARDOUS";
       limit = 400;
       break;
     default:
@@ -34,8 +34,8 @@ const getParticles = (n) => {
   return Math.round(n * (n / limit));
 };
 
-export const getCity = async (location) => {
-  const url = location.name ? cityIpRequest(location.name) : hereIpRequest();
+export const getCity = async (slug) => {
+  const url = slug ? cityIpRequest(slug) : hereIpRequest();
   const response = await fetch(url);
   const apiResponse = await response.json();
 

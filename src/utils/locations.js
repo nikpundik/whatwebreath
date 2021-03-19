@@ -100,5 +100,11 @@ export const locations = [
   { name: "Budapest" },
   { name: "Maracaibo" },
   { name: "Ekurhuleni" },
-  { name: "Changsha" }
+  { name: "Changsha" },
 ];
+
+export const getNextLocation = (slug) => {
+  const index = locations.findIndex((location) => location.name === slug);
+  if (index >= 0 && index < locations.length - 1) return locations[index + 1];
+  return locations[0];
+};

@@ -1,16 +1,23 @@
+import { useRoute } from "wouter";
+
 import Webcam from "../Webcam";
 import Copy from "../Copy";
 import Canvas from "../Canvas";
+import useCity from "../../hooks/useCity";
 
-function City({ status, city, next, showWebcam, setShowWebcam }) {
+function City({ showWebcam, setShowWebcam }) {
+  const [, params] = useRoute("/:city");
+  const { status, city, nextCity, isHome } = useCity(params && params.city);
+
   return (
-    <div id="app">
+    <div>
       {showWebcam && <Webcam />}
       <Canvas status={status} city={city} />
       <Copy
         status={status}
         city={city}
-        next={next}
+        isHome={isHome}
+        nextCity={nextCity}
         setShowWebcam={setShowWebcam}
       />
     </div>

@@ -31,7 +31,6 @@ const getParticles = (n) => {
     default:
       break;
   }
-  console.log(Math.round(n * (n / limit)));
   return Math.round(n * (n / limit));
 };
 

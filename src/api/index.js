@@ -49,6 +49,6 @@ export const getCity = async (location) => {
 
   return {
     name: town,
-    particles: getParticles(pm25),
+    particles: pm25 < 400 ? pm25 : 400,
   };
 };

@@ -24,7 +24,7 @@ function Particle({ particle }) {
 function Particles({ particles = [] }) {
   return (
     <group>
-      {particles.map((particle) => (
+      {particles.map(particle => (
         <Particle key={particle.key} particle={particle} />
       ))}
     </group>

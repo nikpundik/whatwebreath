@@ -1,3 +1,107 @@
-.manifest {
-  padding: 20px;
+.topBar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.brand {
+  font-family: 'Nb international pro', sans-serif;
+  color: #25ff00;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.link {
+  color: #25ff00;
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.manifesto {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.image {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.col6 {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  width: 50%;
+  padding-right: 40px;
+  padding-left: 0px;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 7991px) {
+  .topBar {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .manifesto {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }

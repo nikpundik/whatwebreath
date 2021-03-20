@@ -16,7 +16,7 @@ function Particle({ particle }) {
   return (
     <mesh position={[particle.x, particle.y, particle.z]} ref={mesh}>
       <sphereBufferGeometry args={[particle.size, 32, 32]} />
-      <meshStandardMaterial color={"#34eb3d"} opacity={0.05} trasparent />
+      <meshStandardMaterial color={"#25ff00"} opacity={0.05} trasparent />
     </mesh>
   );
 }
@@ -24,7 +24,7 @@ function Particle({ particle }) {
 function Particles({ particles = [] }) {
   return (
     <group>
-      {particles.map(particle => (
+      {particles.map((particle) => (
         <Particle key={particle.key} particle={particle} />
       ))}
     </group>

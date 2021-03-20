@@ -9,7 +9,7 @@ import useCity from "./useCity";
 
 function City() {
   const [, params] = useRoute("/:city");
-  const [showWebcam, setShowWebcam] = useState(false);
+  const [showWebcam, setShowWebcam] = useState(true);
   const { status, city, nextCity, isHome } = useCity(params && params.city);
 
   return (

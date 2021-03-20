@@ -26,7 +26,7 @@ function Manifest() {
             <div>:-)</div>
           </div>
           <div className={styles.col6} alt="no good WWB">
-            <img className={styles.image} src="https://uploads-ssl.webflow.com/6054be9e3328955c76eebcb8/6054c5445e16ba2e49fac051_negative-p-2000.jpeg" />
+            <img className={styles.image} src="https://uploads-ssl.webflow.com/6054be9e3328955c76eebcb8/6054c5445e16ba2e49fac051_negative-p-2000.jpeg" alt="no good WWB" />
             <div>:-(</div>
           </div>
         </div>

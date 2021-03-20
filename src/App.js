@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Switch, Route } from "wouter";
+
+import Manifest from "./components/Manifest";
 import City from "./components/City";
 
 function App() {
-  const [showWebcam, setShowWebcam] = useState(true);
   return (
     <div id="app">
       <Switch>
-        <Route path="/manifest">About Us</Route>
+        <Route path="/manifest">
+          <Manifest />
+        </Route>
         <Route>
-          <City showWebcam={showWebcam} setShowWebcam={setShowWebcam} />
+          <City />
         </Route>
       </Switch>
     </div>

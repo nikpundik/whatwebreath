@@ -1,37 +1,34 @@
 import { hereIpRequest, cityIpRequest } from "./config";
 
 const getParticles = (n) => {
-  let text = "";
-  let limit = 0;
+  let label = "";
   switch (true) {
     case n < 50:
-      text = "GOOD";
-      limit = 50;
+      label = "good";
       break;
     case n < 100:
-      text = "MODERATE";
-      limit = 100;
+      label = "Moderate";
       break;
     case n < 150:
-      text = "UNHEALTHY FOR SERSITIVE GROUPS";
-      limit = 150;
+      label = "Unhealthy for sersitive groups";
       break;
     case n < 200:
-      text = "UNHEALTHY";
-      limit = 200;
+      label = "Unhealthy";
       break;
     case n < 300:
-      text = "VERY UNHEALTHY";
-      limit = 300;
+      label = "Very unhealthy";
       break;
     case n > 301:
-      text = "HAZARDOUS";
-      limit = 400;
+      label = "Hazardous";
       break;
     default:
+      label = "";
       break;
   }
-  return Math.round(n * (n / limit));
+  return {
+    label,
+    particles: Math.min(n, 400),
+  };
 };
 
 export const getCity = async (slug) => {
@@ -49,6 +46,6 @@ export const getCity = async (slug) => {
 
   return {
     name: town,
-    particles: pm25 < 400 ? pm25 : 400,
+    ...getParticles(pm25),
   };
 };

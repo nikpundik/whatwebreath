@@ -1,27 +1,28 @@
 import React from "react";
 import { Link } from "wouter";
 
-import styles from "./Copy.module.css";
+import styles from "./UI.module.css";
 
-const CityCopy = ({ city, nextCity, isHome, setShowWebcam }) => {
+const UIContent = ({ city, nextCity, isHome, setShowWebcam }) => {
   return (
     <React.Fragment>
+      <Link href="/manifest">manifest</Link>
       <button onClick={() => setShowWebcam((prev) => !prev)}>webcam</button>
-      <Link href={isHome ? `/${nextCity.name}` : "/"}>
-        <a className="link">{isHome ? "Rest of the world" : "Back home"}</a>
+      <Link href={isHome ? `/${nextCity.slug}` : "/"}>
+        {isHome ? "Rest of the world" : "Back home"}
       </Link>
-      <h1>{city.name}</h1>
+      <h1>{city.shortName || city.name}</h1>
     </React.Fragment>
   );
 };
 
-function Copy({ status, city, nextCity, isHome, setShowWebcam }) {
+function UI({ status, city, nextCity, isHome, setShowWebcam }) {
   return (
     <div className={styles.copy}>
       {status === "loading" && <div>loader</div>}
       {status === "error" && <div>Ops...something went wrong</div>}
       {status === "loaded" && (
-        <CityCopy
+        <UIContent
           city={city}
           nextCity={nextCity}
           isHome={isHome}
@@ -32,4 +33,4 @@ function Copy({ status, city, nextCity, isHome, setShowWebcam }) {
   );
 }
 
-export default Copy;
+export default UI;

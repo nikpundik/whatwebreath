@@ -1,19 +1,22 @@
+import React, { useState } from "react";
 import { useRoute } from "wouter";
 
 import Webcam from "../Webcam";
-import Copy from "../Copy";
+import UI from "../UI";
 import Canvas from "../Canvas";
-import useCity from "../../hooks/useCity";
 
-function City({ showWebcam, setShowWebcam }) {
+import useCity from "./useCity";
+
+function City() {
   const [, params] = useRoute("/:city");
+  const [showWebcam, setShowWebcam] = useState(false);
   const { status, city, nextCity, isHome } = useCity(params && params.city);
 
   return (
     <div>
       {showWebcam && <Webcam />}
       <Canvas status={status} city={city} />
-      <Copy
+      <UI
         status={status}
         city={city}
         isHome={isHome}

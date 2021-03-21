@@ -109,10 +109,10 @@ shuffle(locations);
 
 export const getFirstLocation = () => locations[0];
 export const getLocationBySlug = (slug) => {
-  if (!slug) return { name: null, slug: null };
+  if (!slug) return { name: null, slug: null, qs: null };
   const location = locations.find((location) => location.slug === slug);
-  if (location) return location;
-  return { name: null, slug };
+  if (location) return { ...location, qs: location.name };
+  return { name: null, slug, qs: slug };
 };
 export const getNextLocation = (slug) => {
   const index = locations.findIndex((location) => location.slug === slug);

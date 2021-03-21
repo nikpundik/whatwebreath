@@ -23,7 +23,7 @@ const useCity = (slug) => {
       try {
         let result = getCached(currentLocation.slug);
         if (!result) {
-          result = await getCity(currentLocation.slug);
+          result = await getCity(currentLocation.qs);
           result.shortName = currentLocation.name;
           setCached(currentLocation.slug, result);
         }

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
+import Positive from "../../assets/images/positive.jpeg";
+import Negative from "../../assets/images/negative.jpeg";
 
 import styles from "./Manifest.module.css";
 
@@ -29,7 +31,7 @@ function Manifest() {
           <div className={styles.col6}>
             <img
               className={styles.image}
-              src="https://uploads-ssl.webflow.com/6054be9e3328955c76eebcb8/6054c52a7ac7ad5b8855f0c3_positive-p-1080.jpeg"
+              src={Positive}
               alt="good WWB"
             />
             <div>:-)</div>
@@ -37,7 +39,7 @@ function Manifest() {
           <div className={styles.col6} alt="no good WWB">
             <img
               className={styles.image}
-              src="https://uploads-ssl.webflow.com/6054be9e3328955c76eebcb8/6054c5445e16ba2e49fac051_negative-p-2000.jpeg"
+              src={Negative}
               alt="no good WWB"
             />
             <div>:-(</div>

@@ -14,7 +14,7 @@ body {
 
 @font-face {
   font-family: "Nb international pro";
-  src: url("https://uploads-ssl.webflow.com/6054be9e3328955c76eebcb8/6054bf0451f8f68339871998_NB%20International%20Pro%20Regular.otf")
+  src: url("assets/fonts/NB-International-Pro-Regular.otf")
     format("opentype");
   font-weight: 400;
   font-style: normal;

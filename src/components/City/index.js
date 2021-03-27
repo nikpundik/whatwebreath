@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useRoute } from "wouter";
 
 import Webcam from "../Webcam";
+import Background from "../Background";
 import UI from "../UI";
 import Canvas from "../Canvas";
 
@@ -14,15 +15,9 @@ function City() {
 
   return (
     <div>
-      {showWebcam && <Webcam />}
+      {showWebcam ? <Webcam setShowWebcam={setShowWebcam} /> : <Background />}
       <Canvas status={status} city={city} />
-      <UI
-        status={status}
-        city={city}
-        isHome={isHome}
-        nextCity={nextCity}
-        setShowWebcam={setShowWebcam}
-      />
+      <UI status={status} city={city} isHome={isHome} nextCity={nextCity} />
     </div>
   );
 }

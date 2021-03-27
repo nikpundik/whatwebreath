@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import styles from "./Webcam.module.css";
 
-function Webcam() {
+function Webcam({ setShowWebcam }) {
   const videoRef = useRef();
   useEffect(() => {
     let stream;
@@ -15,8 +15,10 @@ function Webcam() {
           });
           stream = newStream;
           videoRef.current.srcObject = newStream;
-        }
-      } catch (e) {}
+        } else setShowWebcam(false);
+      } catch (e) {
+        setShowWebcam(false);
+      }
     };
     load();
     return () => {
@@ -26,7 +28,7 @@ function Webcam() {
         });
       }
     };
-  }, []);
+  }, [setShowWebcam]);
   return (
     <video className={styles.webcam} ref={videoRef} autoPlay={true}></video>
   );

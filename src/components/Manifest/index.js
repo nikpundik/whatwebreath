@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
-import Positive from "../../assets/images/positive.jpeg";
-import Negative from "../../assets/images/negative.jpeg";
+import Positive from "../../assets/images/positive1.jpg";
+import Negative from "../../assets/images/negative1.jpg";
 
 import styles from "./Manifest.module.css";
 

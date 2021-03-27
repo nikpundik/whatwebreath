@@ -15,7 +15,7 @@ const getDisplayPM = (status, city = {}) => {
   return `${particles || "???"} — pm25`;
 };
 
-function UI({ status, city, nextCity, isHome, setShowWebcam }) {
+function UI({ status, city, nextCity, isHome }) {
   return (
     <div className={styles.ui}>
       <header className={styles.header}>

@@ -21,7 +21,7 @@ function UI({ status, city, nextCity, isHome, setShowWebcam }) {
       <header className={styles.header}>
         <div>
           <h3>WhatWeBreathe</h3>
-          <h2>Plotting PMx around you</h2>
+          <h2>Plotting PM25 around you</h2>
         </div>
         <div>
           <Link href="/manifest">Manifesto →</Link>

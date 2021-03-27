@@ -12,7 +12,7 @@ function Manifest() {
         <h1 className={styles.brand}>
           WhatWeBreathe
           <br />
-          Plotting PMx around you
+          Plotting PM25 around you
         </h1>
         <Link href="/" className={styles.link}>
           Back <span>→</span>
@@ -29,19 +29,11 @@ function Manifest() {
         </p>
         <div className={styles.row}>
           <div className={styles.col6}>
-            <img
-              className={styles.image}
-              src={Positive}
-              alt="good WWB"
-            />
+            <img className={styles.image} src={Positive} alt="good WWB" />
             <div>:-)</div>
           </div>
           <div className={styles.col6} alt="no good WWB">
-            <img
-              className={styles.image}
-              src={Negative}
-              alt="no good WWB"
-            />
+            <img className={styles.image} src={Negative} alt="no good WWB" />
             <div>:-(</div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import React from "react";
-import { Link } from "wouter";
+import React, { useCallback } from "react";
+import { Link, useLocation } from "wouter";
+import { useSwipeable } from "react-swipeable";
 
 import Loader from "./Loader";
 import styles from "./UI.module.css";
@@ -16,8 +17,18 @@ const getDisplayPM = (status, city = {}) => {
 };
 
 function UI({ status, city, nextCity, isHome }) {
+  const [, setLocation] = useLocation();
+  const nextUrl = isHome ? `/${nextCity.slug}` : "/";
+  const onSwipe = useCallback(
+    () => status !== "loading" && setLocation(nextUrl),
+    [status, nextUrl, setLocation]
+  );
+  const handlers = useSwipeable({
+    onSwipedLeft: onSwipe,
+    onSwipedRight: onSwipe,
+  });
   return (
-    <div className={styles.ui}>
+    <div {...handlers} className={styles.ui}>
       <header className={styles.header}>
         <div>
           <h3>WhatWeBreathe</h3>
@@ -33,10 +44,7 @@ function UI({ status, city, nextCity, isHome }) {
           <div>{getDisplayPM(status, city)}</div>
         </div>
         <div className={styles.action}>
-          <Link
-            disabled={status === "loading"}
-            href={isHome ? `/${nextCity.slug}` : "/"}
-          >
+          <Link disabled={status === "loading"} href={nextUrl}>
             {isHome ? "Rest of the world" : "Back home"}{" "}
             <span className={isHome ? styles.homeLink : styles.worldLink}>
               →

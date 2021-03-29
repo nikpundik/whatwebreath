@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/whatwebreathe/static/css/main.aea120f3.chunk.css",
-    "main.js": "/whatwebreathe/static/js/main.7112eb78.chunk.js",
-    "main.js.map": "/whatwebreathe/static/js/main.7112eb78.chunk.js.map",
-    "runtime-main.js": "/whatwebreathe/static/js/runtime-main.f1631548.js",
-    "runtime-main.js.map": "/whatwebreathe/static/js/runtime-main.f1631548.js.map",
-    "static/js/2.4e2962ba.chunk.js": "/whatwebreathe/static/js/2.4e2962ba.chunk.js",
-    "static/js/2.4e2962ba.chunk.js.map": "/whatwebreathe/static/js/2.4e2962ba.chunk.js.map",
-    "static/js/3.175c0044.chunk.js": "/whatwebreathe/static/js/3.175c0044.chunk.js",
-    "static/js/3.175c0044.chunk.js.map": "/whatwebreathe/static/js/3.175c0044.chunk.js.map",
+    "main.css": "/whatwebreathe/static/css/main.cfb902cc.chunk.css",
+    "main.js": "/whatwebreathe/static/js/main.dcc62186.chunk.js",
+    "main.js.map": "/whatwebreathe/static/js/main.dcc62186.chunk.js.map",
+    "runtime-main.js": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js",
+    "runtime-main.js.map": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js.map",
+    "static/js/2.2a7b2090.chunk.js": "/whatwebreathe/static/js/2.2a7b2090.chunk.js",
+    "static/js/2.2a7b2090.chunk.js.map": "/whatwebreathe/static/js/2.2a7b2090.chunk.js.map",
+    "static/js/3.561ebf06.chunk.js": "/whatwebreathe/static/js/3.561ebf06.chunk.js",
+    "static/js/3.561ebf06.chunk.js.map": "/whatwebreathe/static/js/3.561ebf06.chunk.js.map",
     "index.html": "/whatwebreathe/index.html",
-    "static/css/main.aea120f3.chunk.css.map": "/whatwebreathe/static/css/main.aea120f3.chunk.css.map",
-    "static/js/2.4e2962ba.chunk.js.LICENSE.txt": "/whatwebreathe/static/js/2.4e2962ba.chunk.js.LICENSE.txt",
+    "static/css/main.cfb902cc.chunk.css.map": "/whatwebreathe/static/css/main.cfb902cc.chunk.css.map",
+    "static/js/2.2a7b2090.chunk.js.LICENSE.txt": "/whatwebreathe/static/js/2.2a7b2090.chunk.js.LICENSE.txt",
     "static/media/index.css": "/whatwebreathe/static/media/NB-International-Pro-Regular.3e4e3af1.otf",
     "static/media/negative1.c2609c9d.jpg": "/whatwebreathe/static/media/negative1.c2609c9d.jpg",
     "static/media/person.706cc310.jpeg": "/whatwebreathe/static/media/person.706cc310.jpeg",
     "static/media/positive1.1d3c32d2.jpg": "/whatwebreathe/static/media/positive1.1d3c32d2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1631548.js",
-    "static/js/2.4e2962ba.chunk.js",
-    "static/css/main.aea120f3.chunk.css",
-    "static/js/main.7112eb78.chunk.js"
+    "static/js/runtime-main.cd8f9b96.js",
+    "static/js/2.2a7b2090.chunk.js",
+    "static/css/main.cfb902cc.chunk.css",
+    "static/js/main.dcc62186.chunk.js"
   ]
 }

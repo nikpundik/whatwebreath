@@ -1,6 +1,6 @@
 # WhatWeBreathe
 
-## Plotting PM25 around you
+## Plotting PM2.5 around you
 
 According to WHO, around _7 million people die every year due to a
 subtle and invisible killer_: **pollution**. Exposure to particles such as

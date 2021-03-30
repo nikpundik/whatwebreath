@@ -11,7 +11,7 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
     "react-swipeable": "^6.1.0",
-    "react-three-fiber": "^5.3.19",
+    "react-three-fiber": "^5.3.22",
     "three": "^0.126.1",
     "web-vitals": "^1.0.1",
     "wouter": "^2.7.4"

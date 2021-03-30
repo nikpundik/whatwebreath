@@ -4,7 +4,7 @@ export const locations = [
   { name: "Toronto", slug: "toronto" },
   { name: "Mumbai", slug: "mumbai" },
   { name: "Roma", slug: "roma" },
-  { name: "Bormio", slug: "bormio" },
+  { name: "Trondheim", slug: "trondheim" },
   { name: "Moscow", slug: "moscow" },
   { name: "Tatebayashi", slug: "tatebayashi" },
   { name: "Shenzhen", slug: "shenzhen" },

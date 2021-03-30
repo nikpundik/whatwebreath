@@ -12,7 +12,7 @@ function Manifest() {
         <h1 className={styles.brand}>
           WhatWeBreathe
           <br />
-          Plotting PM25 around you
+          Plotting PM2.5 around you
         </h1>
         <Link href="/" className={styles.link}>
           Back <span>→</span>

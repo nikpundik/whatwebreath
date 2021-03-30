@@ -109,6 +109,9 @@
   .ui a {
     color: #fff;
   }
+  .ui a:focus {
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 384px) {

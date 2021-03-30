@@ -13,7 +13,7 @@ const getDisplayName = (status, city = {}) => {
 };
 const getDisplayPM = (status, city = {}) => {
   const particles = status === "loaded" ? city.particles : null;
-  return `${particles || "???"} — pm25`;
+  return `${particles || "???"} — pm2.5`;
 };
 
 function UI({ status, city, nextCity, isHome }) {
@@ -32,7 +32,7 @@ function UI({ status, city, nextCity, isHome }) {
       <header className={styles.header}>
         <div>
           <h3>WhatWeBreathe</h3>
-          <h2>Plotting PM25 around you</h2>
+          <h2>Plotting PM2.5 around you</h2>
         </div>
         <div>
           <Link href="/manifest">Manifesto →</Link>

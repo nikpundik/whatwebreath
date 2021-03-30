@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/whatwebreathe/static/css/main.cfb902cc.chunk.css",
-    "main.js": "/whatwebreathe/static/js/main.dcc62186.chunk.js",
-    "main.js.map": "/whatwebreathe/static/js/main.dcc62186.chunk.js.map",
+    "main.css": "/whatwebreathe/static/css/main.97c1971b.chunk.css",
+    "main.js": "/whatwebreathe/static/js/main.7063b9be.chunk.js",
+    "main.js.map": "/whatwebreathe/static/js/main.7063b9be.chunk.js.map",
     "runtime-main.js": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js",
     "runtime-main.js.map": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js.map",
     "static/js/2.2a7b2090.chunk.js": "/whatwebreathe/static/js/2.2a7b2090.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.561ebf06.chunk.js": "/whatwebreathe/static/js/3.561ebf06.chunk.js",
     "static/js/3.561ebf06.chunk.js.map": "/whatwebreathe/static/js/3.561ebf06.chunk.js.map",
     "index.html": "/whatwebreathe/index.html",
-    "static/css/main.cfb902cc.chunk.css.map": "/whatwebreathe/static/css/main.cfb902cc.chunk.css.map",
+    "static/css/main.97c1971b.chunk.css.map": "/whatwebreathe/static/css/main.97c1971b.chunk.css.map",
     "static/js/2.2a7b2090.chunk.js.LICENSE.txt": "/whatwebreathe/static/js/2.2a7b2090.chunk.js.LICENSE.txt",
     "static/media/index.css": "/whatwebreathe/static/media/NB-International-Pro-Regular.3e4e3af1.otf",
     "static/media/negative1.c2609c9d.jpg": "/whatwebreathe/static/media/negative1.c2609c9d.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.cd8f9b96.js",
     "static/js/2.2a7b2090.chunk.js",
-    "static/css/main.cfb902cc.chunk.css",
-    "static/js/main.dcc62186.chunk.js"
+    "static/css/main.97c1971b.chunk.css",
+    "static/js/main.7063b9be.chunk.js"
   ]
 }

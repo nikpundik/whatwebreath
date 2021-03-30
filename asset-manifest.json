@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/whatwebreathe/static/css/main.97c1971b.chunk.css",
-    "main.js": "/whatwebreathe/static/js/main.7063b9be.chunk.js",
-    "main.js.map": "/whatwebreathe/static/js/main.7063b9be.chunk.js.map",
-    "runtime-main.js": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js",
-    "runtime-main.js.map": "/whatwebreathe/static/js/runtime-main.cd8f9b96.js.map",
-    "static/js/2.2a7b2090.chunk.js": "/whatwebreathe/static/js/2.2a7b2090.chunk.js",
-    "static/js/2.2a7b2090.chunk.js.map": "/whatwebreathe/static/js/2.2a7b2090.chunk.js.map",
-    "static/js/3.561ebf06.chunk.js": "/whatwebreathe/static/js/3.561ebf06.chunk.js",
-    "static/js/3.561ebf06.chunk.js.map": "/whatwebreathe/static/js/3.561ebf06.chunk.js.map",
-    "index.html": "/whatwebreathe/index.html",
-    "static/css/main.97c1971b.chunk.css.map": "/whatwebreathe/static/css/main.97c1971b.chunk.css.map",
-    "static/js/2.2a7b2090.chunk.js.LICENSE.txt": "/whatwebreathe/static/js/2.2a7b2090.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/whatwebreathe/static/media/NB-International-Pro-Regular.3e4e3af1.otf",
-    "static/media/negative1.c2609c9d.jpg": "/whatwebreathe/static/media/negative1.c2609c9d.jpg",
-    "static/media/person.706cc310.jpeg": "/whatwebreathe/static/media/person.706cc310.jpeg",
-    "static/media/positive1.1d3c32d2.jpg": "/whatwebreathe/static/media/positive1.1d3c32d2.jpg"
+    "main.css": "/static/css/main.96102500.chunk.css",
+    "main.js": "/static/js/main.925ec94f.chunk.js",
+    "main.js.map": "/static/js/main.925ec94f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.89c452b6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.89c452b6.js.map",
+    "static/js/2.575360eb.chunk.js": "/static/js/2.575360eb.chunk.js",
+    "static/js/2.575360eb.chunk.js.map": "/static/js/2.575360eb.chunk.js.map",
+    "static/js/3.561ebf06.chunk.js": "/static/js/3.561ebf06.chunk.js",
+    "static/js/3.561ebf06.chunk.js.map": "/static/js/3.561ebf06.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.96102500.chunk.css.map": "/static/css/main.96102500.chunk.css.map",
+    "static/js/2.575360eb.chunk.js.LICENSE.txt": "/static/js/2.575360eb.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/NB-International-Pro-Regular.3e4e3af1.otf",
+    "static/media/negative1.c2609c9d.jpg": "/static/media/negative1.c2609c9d.jpg",
+    "static/media/person.706cc310.jpeg": "/static/media/person.706cc310.jpeg",
+    "static/media/positive1.1d3c32d2.jpg": "/static/media/positive1.1d3c32d2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd8f9b96.js",
-    "static/js/2.2a7b2090.chunk.js",
-    "static/css/main.97c1971b.chunk.css",
-    "static/js/main.7063b9be.chunk.js"
+    "static/js/runtime-main.89c452b6.js",
+    "static/js/2.575360eb.chunk.js",
+    "static/css/main.96102500.chunk.css",
+    "static/js/main.925ec94f.chunk.js"
   ]
 }

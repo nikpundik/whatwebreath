@@ -46,7 +46,7 @@ export const locations = [
   { name: "Beroun", slug: "beroun" },
   { name: "Cape Town", slug: "cape-town" },
   { name: "Chennai", slug: "chennai" },
-  { name: "Mexico City", slug: "mexico City" },
+  { name: "Mexico City", slug: "mexico-city" },
   { name: "Medellin", slug: "medellin" },
   { name: "Tangshan", slug: "tangshan" },
   { name: "Lanzhou", slug: "lanzhou" },

@@ -7,7 +7,7 @@ import styles from "./Manifest.module.css";
 
 function Manifest() {
   return (
-    <div>
+    <main className={styles.main}>
       <div className={styles.topBar}>
         <h1 className={styles.brand}>
           WhatWeBreathe
@@ -46,7 +46,7 @@ function Manifest() {
           by Polar Coffee <span>→</span>
         </Link>
       </div>
-    </div>
+    </main>
   );
 }
 

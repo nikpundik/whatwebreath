@@ -86,7 +86,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 7991px) {
+@media screen and (max-width: 991px) {
   .topBar {
     padding-right: 30px;
     padding-left: 30px;
@@ -109,6 +109,22 @@
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+    padding: 10px 0px;
+  }
+
+  .manifesto {
+    padding: 10px 0px;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+  .col6 {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

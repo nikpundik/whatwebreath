@@ -42,9 +42,9 @@ function Manifest() {
           dust pollution: have you ever wondered what it would be like if these
           particles were visible? We tried to give an answer.
         </p>
-        <Link href="/" className={styles.link}>
+        <a href="http://www.polarcoffee.it/" target="_blank" rel="noopener noreferrer" className={styles.link}>
           by Polar Coffee <span>→</span>
-        </Link>
+        </a>
       </div>
     </main>
   );
